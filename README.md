@@ -6,7 +6,7 @@
 
 ##  Overview
 
-This project implements a **Univariate Hawkes Process** to model the arrival times of high-frequency trades (tick data). Unlike Poisson processes, which assume event independence, Hawkes processes capture the **"self-exciting"** nature of financial markets—where a large trade increases the probability of subsequent trades.
+This project implements a **Univariate Hawkes Process** to model the arrival times of high-frequency trades (tick data). Unlike Poisson processes, which assume event independence, Hawkes processes capture the **"self-exciting"** nature of financial markets where a large trade increases the probability of subsequent trades.
 
 This tool is designed to estimate the **Branching Ratio ($n$)**, a critical metric in market microstructure that quantifies the degree of reflexivity (endogeneity) in the order book.
 
@@ -38,5 +38,6 @@ $$n = \frac{\alpha}{\beta}$$
 * src/analytics.py: Visualization tools for intensity curves and criticality reporting.
 
 ## Disclaimer
+
 
 Educational Use Only. This software is for research and educational purposes. It is not intended to be used as a standalone trading system or financial advice. The "Criticality" metrics derived here are theoretical constructs and may not predict all market anomalies.
